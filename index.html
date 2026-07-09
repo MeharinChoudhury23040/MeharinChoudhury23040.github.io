@@ -5,6 +5,7 @@
     <title>Meharin's Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
 
@@ -21,14 +22,14 @@
 </header>
 
 <!-- HOME -->
-<section id="home" class="home">
+<section id="home" class="home" data-aos="fade-up">
     <img src="Pic1.4.jpeg" class="profile-pic">
     <h1>Assalamu alaikum, I'm Meharin Choudhury</h1>
     <p>ICT Student | MBSTU | Web Developer</p>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
         I am an ICT student passionate about web development. I enjoy building projects
@@ -37,30 +38,30 @@
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" data-aos="zome-in">
     <h2>Skills</h2>
     <div class="grid">
-        <div class="card circle-card"> <img src="c2.jpg" class="profile-pic"> <h3>C</h3> </div>
-        <div class="card circle-card"><img src="c-plus2.jpg" class="profile-pic"> <h3>C++</h3> </div>
-        <div class="card circle-card"><img src="java.jpeg" class="profile-pic"> <h3>Java</h3> </div>
-        <div class="card circle-card"><img src="Python.jpg" class="profile-pic"> <h3>Python</h3> </div>
-        <div class="card circle-card"> <img src="html.jpeg" class="profile-pic"> <h3>HTML</h3></div>
-        <div class="card circle-card"> <img src="css.jpeg" class="profile-pic"> <h3>CSS</h3></div>
-        <div class="card circle-card"> <img src="js.jpg" class="profile-pic"> <h3>JavaScript</h3></div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="c2.jpg" class="profile-pic"> <h3>C</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"><img src="c-plus2.jpg" class="profile-pic"> <h3>C++</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"><img src="java.jpeg" class="profile-pic"> <h3>Java</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"><img src="Python.jpg" class="profile-pic"> <h3>Python</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="html.jpeg" class="profile-pic"> <h3>HTML</h3></div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="css.jpeg" class="profile-pic"> <h3>CSS</h3></div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="js.jpg" class="profile-pic"> <h3>JavaScript</h3></div>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" data-aos="fade-left">
     <h2>Projects</h2>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
         <img src="bmi.jpg" class="profile-pic">
         <h3>Perfect BMI Finder</h3>
         <p>A C++ based health analysis tool that calculates Body Mass Index and gives health recommendations.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
         <img src="personal_port.png" class="profile-pic">
         <h3>Portfolio Website</h3>
         <p>A responsive personal portfolio website built using HTML, CSS, and Node.js to showcase skills, projects, and contact information.</p>
@@ -68,7 +69,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <img src="contact.avif" class="profile-pic">
 
@@ -100,7 +101,14 @@
     <p id="msg"></p>
 </section>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 <script src="script.js"></script>
 </body>
