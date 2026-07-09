@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meharin's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h2 class="name">Meharin Choudhury</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home" data-aos="fade-up">
+    <img src="Pic1.4.jpeg" class="profile-pic">
+    <h1>Assalamu alaikum, I'm Meharin Choudhury</h1>
+    <p>ICT Student | MBSTU | Web Developer</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+        I am an ICT student passionate about web development. I enjoy building projects
+        using Python, Java, and web technologies.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" data-aos="zome-in">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card circle-card" data-aos="flip-left"> <img src="c2.jpg" class="profile-pic"> <h3>C</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"><img src="c-plus2.jpg" class="profile-pic"> <h3>C++</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"><img src="java.jpeg" class="profile-pic"> <h3>Java</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"><img src="Python.jpg" class="profile-pic"> <h3>Python</h3> </div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="html.jpeg" class="profile-pic"> <h3>HTML</h3></div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="css.jpeg" class="profile-pic"> <h3>CSS</h3></div>
+        <div class="card circle-card" data-aos="flip-left"> <img src="js.jpg" class="profile-pic"> <h3>JavaScript</h3></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" data-aos="fade-left">
+    <h2>Projects</h2>
+
+    <div class="card" data-aos="zoom-in">
+        <img src="bmi.jpg" class="profile-pic">
+        <h3>Perfect BMI Finder</h3>
+        <p>A C++ based health analysis tool that calculates Body Mass Index and gives health recommendations.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+        <img src="personal_port.png" class="profile-pic">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website built using HTML, CSS, and Node.js to showcase skills, projects, and contact information.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <img src="contact.avif" class="profile-pic">
+
+    <!-- Your personal contact info -->
+    <div class="contact-info">
+        <p><b>Email:</b> it23040@mbstu.ac.bd</p>
+        <p><b>Phone:</b> +8801703809695</p>
+        <p><b>Location:</b> Tangail , Bangladesh</p>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">
+             <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+    </form>
+
+    <p id="msg"></p>
+
+
+    <div class="social-links">
+    <a href="https://github.com/MeharinChoudhury23040" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/meharin-choudhury-2394b5299/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/1RB7uo6dSb/" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/mehar_in40" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    </div>
+
+    <p id="msg"></p>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
